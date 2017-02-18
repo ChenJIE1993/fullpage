@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿网易</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.fullPage.min.js"></script>
+</head>
+<body>
+<!--框-->
+<div class="box_line">
+    <div class="top-li"></div>
+    <div class="left-li"></div>
+    <div class="bottom-li b-l "></div>
+    <div class="bottom-li b-r "></div>
+    <div class="right-li r-t "></div>
+    <div class="right-li r-b "></div>
+    <div id="logo">
+        <img src="img/logo_110833f.png" alt="logo" >
+    </div>
+    <div id="menu"></div>
+    <div id="menu2"></div>
+
+    <!--导航-->
+    <div class="menu_holder">
+        <a href="http://game.163.com/love/">游戏，热爱才懂</a>
+        <a href="http://game.163.com/love/">网易游戏APP</a>
+        <a href="http://game.163.com/love/">关于网易游戏</a>
+        <a href="http://game.163.com/love/">人才招聘</a>
+        <a href="http://game.163.com/love/">客服中心</a>
+        <a href="http://game.163.com/love/">网易游戏频道</a>
+    </div>
+    <div class="jiantou arrowx">
+        <img src="img/ico-arrow_0550dda.png" alt="">
+    </div>
+    <div class="jiantou arrows">
+        <img src="img/arrow.png" alt="">
+    </div>
+
+    <!--//音频全屏-->
+    <div class="bg_li">
+        <div id="video_play">
+            <img src="img/btn-play_25b1a15.png" alt="" onclick="play()"/>
+        </div>
+    </div>
+
+    <!--锚点-->
+    <div class="dot">
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--尾标-->
+    <div id="share">
+        <p>-分享你的热爱感言-</p>
+        <img src="img/share-bg_b832725.png" alt="">
+    </div>
+</div>
+<div id="menu3"></div>
+<div id="menu4"></div>
+
+<!--滚动区域-->
+<section class="swipe-container">
+    <!--第一张-->
+    <div class="page page_1 section" id="p1">
+        <div class="cover">
+            <div class="bg">
+                <video id="video"   autoplay=""  loop="">
+                    <source src="https://nie.res.netease.com/nie/v/280ca21d7d7e693674431c894a67bcc7qt.mp4">
+                </video>
+            </div>
+            <div class="words_show">
+                <img src="img/title-font-1_90d25aa.png" alt="" id="a1">
+                <img src="img/title-font-2_3be9b12.png" alt="" id="a2">
+                <img src="img/title-font-3_bb665a7.png" alt="" id="a3">
+                <img src="img/title-font-4_bba2b7f.png" alt="" id="a4">
+                <img src="img/title-font-5_b6ba938.png" alt="" id="a5">
+            </div>
+        </div>
+    </div>
+    <!--第二张-->
+    <div class="page page_2 section" id="p2">
+        <div class="bg">
+            <img src="img/vision-6_b5ee203.jpg" alt="" class="bgi">
+        </div>
+        <div id="word_box">
+            <div class="words-p2">
+                <img src="img/screen-6-txt_61a20c3.png" alt="">
+            </div>
+            <div class="words_show ws_2">
+                <img src="img/slogen_7c7bf41.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--第三张-->
+    <div class="page page_3 section" id="p3">
+        <div class="bg">
+            <img src="img/vision-3_12e9e7f.jpg" alt="" class="bgi">
+        </div>
+        <div id="word_box3">
+            <div class="words-p3">
+                <img src="img/screen-3-txt_8e7a5fc.png" alt="">
+            </div>
+            <div class="words_show ws_3">
+                <img src="img/slogen_7c7bf41.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--第四张-->
+    <div class="page page_4 section" id="p4">
+        <div class="bg">
+            <img src="img/vision-5_e844412.jpg" alt="" class="bgi">
+        </div>
+        <div id="word_box4">
+            <div class="words-p4">
+                <img src="img/screen-5-txt_24142a3.png" alt="">
+            </div>
+            <div class="words_show ws_4">
+                <img src="img/slogen_7c7bf41.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--第五张-->
+    <div class="page page_5 section" id="p5">
+        <div class="bg">
+            <img src="img/vision-4_099cc85.jpg" alt="" class="bgi">
+        </div>
+        <div id="word_box5">
+        <div class="words-p5">
+            <img src="img/screen-4-txt_f90cceb.png" alt="">
+        </div>
+        <div class="words_show ws_5">
+            <img src="img/slogen_7c7bf41.png" alt="">
+        </div>
+        </div>
+    </div>
+    <!--第六章-->
+    <div class="page page_6 section" id="p6">
+        <div class="bg">
+            <img src="img/vision-2_0a7c125.jpg" alt="" class="bgi">
+        </div>
+        <div id="word_box6">
+        <div class="words-p6">
+            <img src="img/screen-2-txt_8427632.png" alt="">
+        </div>
+        <div class="words_show ws_6">
+            <img src="img/slogen_7c7bf41.png" alt="">
+        </div>
+        </div>
+    </div>
+</section>
+<script src="index.js"></script>
+<!--<script src="gundong.js"></script>-->
+
+</body>
+</html>
